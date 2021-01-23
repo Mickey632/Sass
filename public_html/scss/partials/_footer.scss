@@ -1,0 +1,11 @@
+$footer-background-color: $purple;
+$footer-color: $white;
+
+footer {
+    background-color: $footer-background-color;
+    padding: 30px 0;
+}
+
+footer a, footer p {
+    color: $footer-color;
+}

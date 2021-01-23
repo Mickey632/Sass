@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Rubik:wght@400;700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -356,6 +357,20 @@ html {
   font-size: 10px;
 }
 
+body {
+  font-size: 16px;
+  color: #000000;
+  background-color: #eeeeee;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #8a059e;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -364,6 +379,30 @@ html {
 
 header {
   padding: 25px 0;
+  background-color: #8a059e;
+}
+
+header a {
+  color: #ffffff;
+}
+
+.about-section {
+  padding: 30px 0;
+  background-color: #ffffff;
+}
+
+.comment-section {
+  padding: 30px 0;
+  background-color: #ffffff;
+}
+
+footer {
+  background-color: #8a059e;
+  padding: 30px 0;
+}
+
+footer a, footer p {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
