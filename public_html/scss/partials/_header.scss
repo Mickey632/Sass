@@ -1,11 +1,73 @@
 $header-background-color: $purple;
 $header-link-color: $white;
+$header-nav-font: $josefin;
+$header-nav-hover: $cyan;
 
 header {
     padding: 25px 0;
     background-color: $header-background-color;
+
+    .branding {
+        text-align: center;
+        a {
+            color: $header-link-color;
+        }
+    }
+
+    nav {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            li {
+                a {
+                    display: block;
+                    padding: 5px 0;
+                    font-family: $header-nav-font;
+                    font-weight: $font-bold; 
+                    color: $header-link-color;
+                    text-align: center;
+                    text-transform: uppercase;
+                    &:hover, &.active {
+                        color: $header-nav-hover;   
+                    }
+                }
+            }
+        }
+    }
 }
 
-header a {
-    color: $header-link-color;
+@media(min-width:768px){
+    header {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            nav {
+                ul {
+                    display: flex;
+                    li {
+                        a {
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:992px){
+    header {
+        .container {
+            nav {
+                ul {
+                    li {
+                        a {
+                            padding: 5px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
