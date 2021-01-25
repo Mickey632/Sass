@@ -1,11 +1,53 @@
 $footer-background-color: $purple;
 $footer-color: $white;
+$footer-nav-font: $josefin;
+$footer-link-hover: $cyan;
 
 footer {
-    background-color: $footer-background-color;
     padding: 30px 0;
+    background-color: $footer-background-color;
+
+    nav {
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 25px;
+            li {
+                a {
+                    display: block;
+                    padding: 5px 0;
+                    font-family: $footer-nav-font;
+                    font-weight: $font-bold;
+                    color: $footer-color;
+                    text-align: center;
+                    text-transform: uppercase;
+                    &:hover, &.active {
+                        color: $footer-link-hover;   
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        color: $footer-color;
+        text-align: center;
+    }
 }
 
-footer a, footer p {
-    color: $footer-color;
+@media(min-width:768px){
+    footer {
+        nav {
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    a {
+                        padding: 5px 20px;
+                    }
+                }
+            }
+        }
+    }
 }

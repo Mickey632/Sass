@@ -372,13 +372,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  width: 90%;
+  width: 97%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 header {
-  padding: 25px 0;
+  padding: 30px 0;
   background-color: #8a059e;
 }
 
@@ -392,7 +392,7 @@ header .branding a {
 
 header nav ul {
   list-style-type: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 header nav ul li a {
@@ -440,12 +440,44 @@ header nav ul li a:hover, header nav ul li a.active {
 }
 
 footer {
-  background-color: #8a059e;
   padding: 30px 0;
+  background-color: #8a059e;
 }
 
-footer a, footer p {
+footer nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+footer nav ul li a {
+  display: block;
+  padding: 5px 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
   color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer nav ul li a:hover, footer nav ul li a.active {
+  color: #09e0b1;
+}
+
+footer .copyright {
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer nav ul li a {
+    padding: 5px 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

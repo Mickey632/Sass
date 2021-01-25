@@ -1,10 +1,10 @@
 $header-background-color: $purple;
 $header-link-color: $white;
 $header-nav-font: $josefin;
-$header-nav-hover: $cyan;
+$header-link-hover: $cyan;
 
 header {
-    padding: 25px 0;
+    padding: 30px 0;
     background-color: $header-background-color;
 
     .branding {
@@ -17,7 +17,7 @@ header {
     nav {
         ul {
             list-style-type: none;
-            padding: 0;
+            padding-left: 0;
             li {
                 a {
                     display: block;
@@ -28,7 +28,7 @@ header {
                     text-align: center;
                     text-transform: uppercase;
                     &:hover, &.active {
-                        color: $header-nav-hover;   
+                        color: $header-link-hover;   
                     }
                 }
             }
