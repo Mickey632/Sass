@@ -1,0 +1,55 @@
+$btn-default-background: $dark-gray;
+$btn-default-color: $white;
+
+$btn-secondary-background: $blue;
+$btn-info-background: $cyan;
+$btn-warning-background: $orange;
+$btn-danger-background: $red;
+$btn-success-background: $green;
+
+%btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-default {
+    @extend %btn;
+    background-color: $btn-default-background;
+    color: $btn-default-color;
+}
+
+.btn-secondary {
+    @extend %btn;
+    background-color: $btn-secondary-background;
+    color: $btn-default-color;
+}
+
+.btn-info {
+    @extend %btn;
+    background-color: $btn-info-background;
+    color: $btn-default-color;
+}
+
+.btn-warning {
+    @extend %btn;
+    background-color: $btn-warning-background;
+    color: $btn-default-color;
+}
+
+.btn-danger {
+    @extend %btn;
+    background-color: $btn-danger-background;
+    color: $btn-default-color;
+}
+
+.btn-success {
+    @extend %btn;
+    background-color: $btn-success-background;
+    color: $btn-default-color;
+}
