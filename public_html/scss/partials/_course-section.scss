@@ -1,0 +1,39 @@
+$table-border-color: 1px solid #000;
+$thead-background-color: $purple;
+$thead-color: $white;
+$tbody-background-color: $white;
+$tbody-background-hover: darken($light-gray, 15%);
+
+.course-section {
+    padding: 30px 0;
+
+    table {
+        border: $table-border-color;
+        border-collapse: collapse;
+        width: 100%;
+        caption {
+            text-align: left;
+            font-style: italic;
+        }
+        th, td {
+            border: $table-border-color;
+            padding: 10px 5px;
+        }
+        thead {
+            background-color: $thead-background-color;
+            th {
+                color: $thead-color;
+            }
+        }
+        tbody {
+            tr {
+                &:nth-of-type(even) {
+                    background-color: $tbody-background-color;
+                }
+                &:hover {
+                    background-color: $tbody-background-hover;
+                }
+            }
+        }
+    }
+}
