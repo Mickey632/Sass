@@ -1,0 +1,5 @@
+$home-background-color: $white;
+
+.home-section {
+    @include styleSection(150px, 150px, $home-background-color);
+}

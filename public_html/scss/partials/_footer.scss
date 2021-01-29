@@ -4,8 +4,7 @@ $footer-nav-font: $josefin;
 $footer-link-hover: $cyan;
 
 footer {
-    padding: 30px 0;
-    background-color: $footer-background-color;
+    @include styleSection(30px, 30px, $footer-background-color);
 
     nav {
         ul {
@@ -22,7 +21,7 @@ footer {
                     text-align: center;
                     text-transform: uppercase;
                     &:hover, &.active {
-                        color: $footer-link-hover;   
+                        color: lighten(complement($footer-background-color), 25%);
                     }
                 }
             }

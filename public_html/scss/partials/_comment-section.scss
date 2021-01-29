@@ -1,6 +1,11 @@
 $comment-background-color: $white;
 
 .comment-section {
-    padding: 30px 0;
-    background-color: $comment-background-color;
+    @include styleSection(30px, 30px, $comment-background-color);
+    
+    .comment-img {
+        img {
+            @include radius(50%);
+        }
+    }
 }
