@@ -19,7 +19,7 @@ $btn-success-background: $green;
 .btn-default {
     @extend %btn;
     background-color: rgba($btn-default-background, 0.8);
-    color: $btn-default-color;
+    color: colorYiq($btn-default-background);
     &:hover {
         background-color: darken($btn-default-background, 15%);
     }
@@ -28,7 +28,7 @@ $btn-success-background: $green;
 .btn-secondary {
     @extend %btn;
     background-color: $btn-secondary-background;
-    color: $btn-default-color;
+    color: colorYiq($btn-secondary-background);
     &:hover {
         background-color: darken($btn-secondary-background, 15%);
     }
@@ -37,7 +37,7 @@ $btn-success-background: $green;
 .btn-info {
     @extend %btn;
     background-color: $btn-info-background;
-    color: $btn-default-color;
+    color: colorYiq($btn-info-background);
     &:hover {
         background-color: darken($btn-info-background, 15%);
     }
@@ -46,7 +46,7 @@ $btn-success-background: $green;
 .btn-warning {
     @extend %btn;
     background-color: $btn-warning-background;
-    color: $btn-default-color;
+    color: colorYiq($btn-warning-background);
     &:hover {
         background-color: darken($btn-warning-background, 15%);
     }
@@ -55,7 +55,7 @@ $btn-success-background: $green;
 .btn-danger {
     @extend %btn;
     background-color: $btn-danger-background;
-    color: $btn-default-color;
+    color: colorYiq($btn-danger-background);
     &:hover {
         background-color: darken($btn-danger-background, 15%);
     }
@@ -64,7 +64,7 @@ $btn-success-background: $green;
 .btn-success {
     @extend %btn;
     background-color: $btn-success-background;
-    color: $btn-default-color;
+    color: colorYiq($btn-success-background);
     &:hover {
         background-color: darken($btn-success-background, 15%);
     }

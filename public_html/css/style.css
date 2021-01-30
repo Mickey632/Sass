@@ -30,7 +30,7 @@
 
 .btn-info {
   background-color: #09e0b1;
-  color: #ffffff;
+  color: #000000;
 }
 
 .btn-info:hover {
@@ -39,7 +39,7 @@
 
 .btn-warning {
   background-color: #f77a05;
-  color: #ffffff;
+  color: #000000;
 }
 
 .btn-warning:hover {
@@ -527,7 +527,7 @@ header nav ul li a:hover, header nav ul li a.active {
 }
 
 .course-section table {
-  border: 1px solid #000;
+  border: 1px solid #000000;
   border-collapse: collapse;
   width: 100%;
 }
@@ -538,7 +538,7 @@ header nav ul li a:hover, header nav ul li a.active {
 }
 
 .course-section table th, .course-section table td {
-  border: 1px solid #000;
+  border: 1px solid #000000;
   padding: 10px 5px;
 }
 
